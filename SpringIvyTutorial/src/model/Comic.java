@@ -1,4 +1,6 @@
+package src.model;
 
+import javax.persistence.*;
 
 public class Comic {
 	
