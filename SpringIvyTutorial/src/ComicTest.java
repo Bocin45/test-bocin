@@ -5,6 +5,8 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import src.config.AppConfig;
 import src.model.Comic;
+import src.model.Customer;
+import src.model.CustomerDAOImpl;
 import src.service.BorrowImpl;
 
 public class ComicTest {
@@ -16,6 +18,13 @@ public class ComicTest {
 		BorrowImpl borrow =  (BorrowImpl) context.getBean("borrowBean");
 		Comic comic = (Comic) borrow.getComic();
 		System.out.println(comic.getTitle());
+		
+	/*	Customer customer = new Customer();
+		customer.setId("123");
+		customer.setName("rizki");
+		
+		CustomerDAOImpl cDaoImpl = (CustomerDAOImpl) context.getBean("customerBean");
+		cDaoImpl.save(customer);*/
 		
 	}
 
