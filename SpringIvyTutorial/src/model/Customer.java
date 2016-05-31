@@ -5,13 +5,15 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "CUSTOMER")
-public class Customer {
+public class Customer implements java.io.Serializable {
 	@Id
-	@Column(name = "Id")
+	@Column(name = "ID")
 	private String id;
 	
-	@Column(name = "user_name")
+	@Column(name = "USER_NAME")
 	private String Name;
+	
+	
 	public String getId() {
 		return id;
 	}

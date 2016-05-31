@@ -15,7 +15,7 @@
 	<property name="lib.dir" value="lib" />
 
 	<!-- ivy start -->
-	<target name="resolve" depends="clean-cache" description="retrieve dependencies with ivy">
+	<target name="resolve"  description="retrieve dependencies with ivy">
 		<echo message="Getting dependencies..." />
 		<ivy:retrieve />
 
